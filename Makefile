@@ -1,12 +1,4 @@
-export THDLOCK_DEFINE=-D_DEBUG_THDLOCK_
-export MODULO_DEFINE=-D_MOD222_STYLE_
-export COMPILE64_DEFINE=-m64
-
 OUTPUT 	= simplec.out
-LIB 	=
-SLIB    = -lbsd -lm -lc -lpthread
-
-CC_OPT	= -c -g -w -I. -D__P_INFO_SHAREMEM__ -D_THREAD_SAFE $(MODULO_DEFINE) $(THDLOCK_DEFINE) $(COMPILE64_DEFINE)
 
 simplec :	
 		gcc -o $(OUTPUT) simplec.c --coverage
