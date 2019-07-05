@@ -1,3 +1,7 @@
+## Prerequisite
+- gcc
+- cppcheck
+
 ## USAGE
 1. `make`
 2. `make sonar`
